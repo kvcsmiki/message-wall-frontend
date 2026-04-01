@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
-  api = 'https://message-wall-backend.vercel.app/api/index';
+  api = 'https://message-wall-backend.vercel.app/api';
 
   async login(email: string, password: string) {
     const res = await fetch(`${this.api}/login`, {
