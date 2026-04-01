@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({ providedIn: 'root' })
 export class WallService {
 
-  private api = 'https://YOUR_BACKEND_URL/api';
+  private api = 'https://message-wall-backend.vercel.app/api';
 
   private getAuthHeaders() {
     return {
